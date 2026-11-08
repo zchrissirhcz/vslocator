@@ -26,17 +26,25 @@ VS 安装器写在 `%ProgramData%` 下的实例状态：
 
 ## 安装
 
-```bat
-python -m pip install vslocator
-```
-
-或者用 pipx 安装成独立的命令行工具：
+`vslocator` 没有发布到 PyPI。**不需要 clone 仓库**，直接用 pip 从 GitHub 源码包
+安装：pip 会自动下载压缩包、构建并装好 `vslocator` 命令。
 
 ```bat
-pipx install vslocator
+python -m pip install https://github.com/zchrissirhcz/vslocator/archive/refs/heads/main.zip
 ```
 
-从源码安装：
+上面装的是 `main` 分支的最新代码。想固定某个版本，就改成 tag 或某个 commit：
+
+```bat
+python -m pip install https://github.com/zchrissirhcz/vslocator/archive/refs/tags/<tag>.zip
+python -m pip install https://github.com/zchrissirhcz/vslocator/archive/<commit-sha>.zip
+```
+
+需要 Python 3.9 或更新版本。升级时在同一条命令后加 `--upgrade`
+（`python -m pip install --upgrade ...`），卸载用
+`python -m pip uninstall vslocator`。
+
+从源码目录安装：
 
 ```bat
 python -m pip install .

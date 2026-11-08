@@ -30,15 +30,25 @@ dependencies. The 18 MB `catalog.json` next to them is never read.
 
 ## Install
 
-```bat
-python -m pip install vslocator
-```
-
-or, for an isolated command-line install:
+`vslocator` is not published on PyPI. Install it straight from the GitHub source
+archive — **no `git clone` needed**: pip downloads the archive, builds it, and
+installs the `vslocator` command.
 
 ```bat
-pipx install vslocator
+python -m pip install https://github.com/zchrissirhcz/vslocator/archive/refs/heads/main.zip
 ```
+
+That tracks the `main` branch. To pin a snapshot instead, point at a tag or a
+commit:
+
+```bat
+python -m pip install https://github.com/zchrissirhcz/vslocator/archive/refs/tags/<tag>.zip
+python -m pip install https://github.com/zchrissirhcz/vslocator/archive/<commit-sha>.zip
+```
+
+This needs Python 3.9 or newer. Re-run the same URL with `--upgrade`
+(`python -m pip install --upgrade ...`) to update, and
+`python -m pip uninstall vslocator` to remove it.
 
 From a source checkout:
 

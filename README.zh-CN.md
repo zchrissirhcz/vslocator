@@ -27,16 +27,20 @@ VS 安装器写在 `%ProgramData%` 下的实例状态：
 ## 安装
 
 ```bat
-python -m pip install .
+python -m pip install vslocator
 ```
 
 或者用 pipx 安装成独立的命令行工具：
 
 ```bat
-pipx install .
+pipx install vslocator
 ```
 
-目前尚未发布到 PyPI。
+从源码安装：
+
+```bat
+python -m pip install .
+```
 
 ## 用法
 

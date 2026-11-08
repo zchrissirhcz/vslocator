@@ -31,16 +31,20 @@ dependencies. The 18 MB `catalog.json` next to them is never read.
 ## Install
 
 ```bat
-python -m pip install .
+python -m pip install vslocator
 ```
 
 or, for an isolated command-line install:
 
 ```bat
-pipx install .
+pipx install vslocator
 ```
 
-The package is not published on PyPI yet.
+From a source checkout:
+
+```bat
+python -m pip install .
+```
 
 ## Usage
 

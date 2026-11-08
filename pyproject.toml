@@ -23,6 +23,11 @@ classifiers = [
     "Topic :: System :: Software Distribution",
 ]
 
+[project.urls]
+Homepage = "https://github.com/zchrissirhcz/vslocator"
+Repository = "https://github.com/zchrissirhcz/vslocator"
+Issues = "https://github.com/zchrissirhcz/vslocator/issues"
+
 [project.scripts]
 vslocator = "vslocator:main"
 
